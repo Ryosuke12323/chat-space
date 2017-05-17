@@ -9,8 +9,10 @@
 |  password  |   string    |  null:false  |
 
 **User association**
-・has_many :groups, through::group_users
-・has_many :massages
+
+*has_many :groups, through::group_users
+*has_many :massages
+
 ------------------------------------------------
 
 **Groups table**
@@ -20,8 +22,10 @@
 |    name    |   string    |index,null:false|
 
 **Group association**
-.has_many :users, through::group_users
-.has_many :massages, through::users
+
+*has_many :users, through::group_users
+*has_many :massages, through::users
+
 ------------------------------------------------
 
 **Group_users table**
@@ -45,6 +49,8 @@
 |  group_id  |  integer    |  null:false  |
 
 **Massage association**
-.belongs_to :user
-.has_one :group, through::user
+
+*belongs_to :user
+*has_one :group, through::user
+
 ------------------------------------------------
