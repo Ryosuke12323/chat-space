@@ -4,8 +4,8 @@
 
 |   column   |    type     |    option    |
 |:-----------|------------:|:------------:|
-|    name    |   string    |index,null:false|
-|    email   |   string    |null:false,unique :true|
+|    name    |   string    |index,null:false,unique :true|
+|    email   |   string    |index,null:false,unique :true|
 |  password  |   string    |  null:false  |
 
 **Association**
@@ -22,13 +22,15 @@
 
 |   column   |    type     |    option    |
 |:-----------|------------:|:------------:|
-|    name    |   string    |index,null:false|
+|    name    |   string    |index,null:false,unique :true|
 
 **Association**
 
 * has_many :group_users
 
 * has_many :users, through: :group_users
+
+* has_many :massages
 
 ------------------------------------------------
 
@@ -51,13 +53,15 @@
 
 |   column   |    type     |    option    |
 |:-----------|------------:|:------------:|
-|    body    |    text     |  null:false  |
+|    body    |    text     |index,null:false|
 |    image   |   string    |              |
-|  user_id   |  integer    |index,null:false|
-|  group_id  |  integer    |index,null:false|
+|  user_id   |  integer    |  null:false  |
+|  group_id  |  integer    |  null:false  |
 
 **Association**
 
 * belongs_to :user
+
+* belongs_to :group
 
 ------------------------------------------------
