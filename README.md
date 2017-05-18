@@ -10,7 +10,9 @@
 
 **Association**
 
-* has_many :groups, through::group_users
+* has_many :group_users
+
+* has_many :groups, through: :group_users
 
 * has_many :massages
 
@@ -24,9 +26,9 @@
 
 **Association**
 
-* has_many :users, through::group_users
+* has_many :group_users
 
-* has_many :massages, through::users
+* has_many :users, through: :group_users
 
 ------------------------------------------------
 
@@ -38,6 +40,10 @@
 |  group_id  |   integer   |  t.references :groups, null:false  |
 
 **Association**
+
+* belongs_to :user
+
+* belongs_to :group
 
 ------------------------------------------------
 
@@ -53,7 +59,5 @@
 **Association**
 
 * belongs_to :user
-
-* has_one :group, through::user
 
 ------------------------------------------------
