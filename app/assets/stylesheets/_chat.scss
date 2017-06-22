@@ -1,0 +1,136 @@
+.chat {
+  height: 100vh;
+  width: calc( 100vw - 300px );
+  float: left;
+}
+
+  .chat__group {
+    height: 12%;
+    border: 1px solid #eeeeee;
+  }
+
+    .chat__group__main {
+      @include clearfix();
+      margin: 0 40px;
+    }
+
+      .chat__group__main--name {
+        color: #333333;
+        font-size: 20px;
+        margin: 35px 0 15px;
+        float: left;
+      }
+
+      .chat__group__edit--btn {
+        color: $blue;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 12.5px 20px;
+        margin: 28px 20px 0;
+        border: 2px solid $blue;
+        float: right;
+      }
+
+    .chat__group__menbers {
+      color: #999999;
+      font-size: 12px;
+      margin: 0 40px;
+    }
+
+      span.chat__group__member {
+        font-style: italic;
+        margin: 0;
+      }
+
+  .chat__messages {
+    height: calc( 100vh - 15% - 90px );
+    overflow-y: scroll;
+    background-color: #f9f9f9;
+  }
+
+    .chat__messages--list {
+      padding-top: 26px;
+      padding-left: 40px;
+    }
+
+      .chat__messages--content {
+        @include clearfix();
+        padding: 20px 0;
+      }
+
+        .chat__message--name {
+          color: $darkgray;
+          font-size: 16px;
+          font-weight: bold;
+          float: left;
+        }
+
+        .chat__message--time {
+          color:  #999999;
+          padding: 2px 10px 0;
+          font-size: 12px;
+          float: left;
+        }
+
+        .chat__message--text {
+          color: $darkgray;
+          clear: both;
+        }
+
+
+
+    .chat__post {
+      height: 90px;
+      width: 100%;
+      background-color: #ddd;
+
+      .chat__message__post__form {
+        margin: 0 40px;
+        position: relative;
+      }
+
+      .chat__message__post__body {
+        position: relative;
+      }
+
+      .message {
+        width: calc( 100% - 150px);
+        padding: 15px 10px;
+        margin: 20px 0;
+        border: none;
+      }
+
+      .chat__file {
+        height: 50px;
+        width: 40px;
+        margin: 32px 130px 20px 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
+      .image {
+        position: absloute;
+        top: 15px;
+        left: 15px;
+        display: none;
+      }
+
+      .submit{
+        color: $white;
+        height: 50px;
+        width: 100px;
+        text-align: center;
+        background-color: $blue;
+        margin: 20px 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: none;
+      }
+    }
+
+
+
+
+
