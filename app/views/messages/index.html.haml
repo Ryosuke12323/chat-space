@@ -1,0 +1,100 @@
+%body
+  .header
+    .header__message
+      チャットグループが作成されました。
+
+  = render "sidebar"
+
+  .chat
+    .chat__group
+      .chat__group__main.clearfix
+        %p.chat__group__main--name techcamp
+        %a.chat__group__edit--btn Edit
+      .chat__group__menbers
+        %span.chat__group__member Member:ryosuke
+
+    .chat__messages
+      .chat__messages--list
+        .chat__messages--content.clearfix
+          %p.chat__message--name Ryosuke Mizuta
+          %p.chat__message--time 2017/06/20 10:25:13
+          %p.chat__message--text How are you today??
+
+        .chat__messages--content.clearfix
+          %p.chat__message--name Ryosuke Mizuta
+          %p.chat__message--time 2017/06/20 10:25:13
+          %p.chat__message--text How are you today??
+
+        .chat__messages--content.clearfix
+          %p.chat__message--name Ryosuke Mizuta
+          %p.chat__message--time 2017/06/20 10:25:13
+          %p.chat__message--text How are you today??
+
+        .chat__messages--content.clearfix
+          %p.chat__message--name Ryosuke Mizuta
+          %p.chat__message--time 2017/06/20 10:25:13
+          %p.chat__message--text How are you today??
+
+        .chat__messages--content.clearfix
+          %p.chat__message--name Ryosuke Mizuta
+          %p.chat__message--time 2017/06/20 10:25:13
+          %p.chat__message--text How are you today??
+
+        .chat__messages--content.clearfix
+          %p.chat__message--name Ryosuke Mizuta
+          %p.chat__message--time 2017/06/20 10:25:13
+          %p.chat__message--text How are you today??
+
+        .chat__messages--content.clearfix
+          %p.chat__message--name Ryosuke Mizuta
+          %p.chat__message--time 2017/06/20 10:25:13
+          %p.chat__message--text How are you today??
+
+        .chat__messages--content.clearfix
+          %p.chat__message--name Ryosuke Mizuta
+          %p.chat__message--time 2017/06/20 10:25:13
+          %p.chat__message--text How are you today??
+
+        .chat__messages--content.clearfix
+          %p.chat__message--name Ryosuke Mizuta
+          %p.chat__message--time 2017/06/20 10:25:13
+          %p.chat__message--text How are you today??
+
+        .chat__messages--content.clearfix
+          %p.chat__message--name Ryosuke Mizuta
+          %p.chat__message--time 2017/06/20 10:25:13
+          %p.chat__message--text How are you today??
+
+        .chat__messages--content.clearfix
+          %p.chat__message--name Ryosuke Mizuta
+          %p.chat__message--time 2017/06/20 10:25:13
+          %p.chat__message--text How are you today??
+
+        .chat__messages--content.clearfix
+          %p.chat__message--name Ryosuke Mizuta
+          %p.chat__message--time 2017/06/20 10:25:13
+          %p.chat__message--text How are you today??
+
+        .chat__messages--content.clearfix
+          %p.chat__message--name Ryosuke Mizuta
+          %p.chat__message--time 2017/06/20 10:25:13
+          %p.chat__message--text How are you today??
+
+        .chat__messages--content.clearfix
+          %p.chat__message--name Ryosuke Mizuta
+          %p.chat__message--time 2017/06/20 10:25:13
+          %p.chat__message--text How are you today??
+
+    .chat__post
+      %form.chat__message__post__form
+        .chat__message__post__body
+          %input.message{ type: "text", placeholder: "type a messsage" }
+          %label.chat__file
+            %input.image{ type: "file" }
+            %i.fa.fa-picture-o
+        %input.submit{ type: "submit", value: "Send" }
+
+
+
+
+

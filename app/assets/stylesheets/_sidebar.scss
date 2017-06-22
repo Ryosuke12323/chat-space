@@ -1,0 +1,83 @@
+.sidebar{
+  height: 100%;
+  width: 300px;
+  float: left;
+}
+
+  .sidebar__user {
+    height: 12%;
+    width: 100%;
+    position: relative;
+    background-color: #253141;
+  }
+
+    .sidebar__user-content {
+      @include clearfix();
+      height: 50px;
+      width: 100%;
+      line-height: 50px;
+      color: $white;
+      margin: auto 0;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+    }
+
+      .sidebar__user--name {
+        font-size: 16px;
+        font-weight: bold;
+        color: $white;
+        margin: 0 20px;
+        display: inline-block;
+        float: left;
+      }
+
+        .sidebar__user--newgroup {
+          margin-left: 90px;
+          position: relative;
+          display: inline-block;
+        }
+          .fa {
+            dislpay: inline-block;
+          }
+
+        .sidebar__user--edit {
+          display: inline-block;
+        }
+          .fa {
+            dislpay: inline-block;
+          }
+
+  .sidebar__groups {
+    height: 85%;
+    width: 100%;
+    background-color: #2f3e51;
+  }
+
+    .sidebar__group--list {
+      color: $white;
+    }
+
+      .sidebar__group {
+        padding: 20px;
+      }
+
+        .sidebar__group--name {
+          font-size: 15px;
+
+        }
+
+        .sidebar__group--message {
+          font-size: 11px;
+        }
+
+
+
+
+
+
+
+
+
+
+
