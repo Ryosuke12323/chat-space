@@ -5,7 +5,8 @@
       %a.sidebar__user--newgroup
         %i.fa.fa-pencil-square-o
       %a.sidebar__user--edit
-        %i.fa.fa-cog
+        = link_to edit_user_path(current_user) do
+          %i.fa.fa-cog
 
   .sidebar__groups
     .sidebar__group--list
