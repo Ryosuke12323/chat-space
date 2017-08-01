@@ -1,9 +1,8 @@
 class MessagesController < ApplicationController
 
   def index
-  end
-
-  def new
+    @groups = current_user.groups
+    @group = Group.find(1)
   end
 
   def create
