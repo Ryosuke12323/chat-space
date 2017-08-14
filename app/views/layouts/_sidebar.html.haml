@@ -1,0 +1,19 @@
+.sidebar
+  .sidebar__user
+    .sidebar__user-content
+      %p.sidebar__user--name
+        = current_user.name
+      %a.sidebar__user--newgroup
+        = link_to new_group_path do
+          %i.fa.fa-pencil-square-o
+      %a.sidebar__user--edit
+        = link_to edit_user_registration_path do
+          %i.fa.fa-cog
+
+  .sidebar__groups
+    .sidebar__group--list
+      %ul
+        -if @groups.present?
+          =render @groups
+
+
